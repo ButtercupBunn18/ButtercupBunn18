@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('font/Minecraft.woff2') format('woff2'),
+         url('font/Minecraft.woff') format('woff'),
+         url('font/Minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: pink url('Background.png') no-repeat center center fixed;
+	background-size: cover;
+    text-align: center;
+    color: #fff;
+	overflow-x: hidden;
+	animation: gentleAppear 0.8s ease-out backwards;
+}
+
+@keyframes gentleAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-home-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    font-size: 70px;
+    background: rgba(255, 105, 180, 0.5);
+    transition: all 0.3s;
+	animation-delay: 0.1s;
+}
+
+.button-container {
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    background: rgba(255, 105, 180, 0.5);
+    transition: all 0.3s;
+    animation-delay: 0.1s;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.home-button {
+    width: auto;
+    min-width: 120px;
+    flex-shrink: 0;
+    white-space: nowrap;
+	display: block;
+    margin: 0 auto 15px auto;
+    background: #ff1493;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+	transition: all 0.3s;
+	text-decoration: none;
+	animation-delay: 0.1s;
+}
+
+.home-button:hover {
+    text-decoration: none;
+    background: #ff4da6;
+	transform: translateY(-5px);
+}
+
+.telegram-text {
+	font-size: 40px;
+}
+
+.telegram-text-user {
+	font-size: 24px;
+	color: #d3d3d3;
+}
+
+#artSlide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.art-slider {
+    width: 60vmin;
+    height: 60vmin;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+
+
+#artSlide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-second {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-home-page-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-home-page-link:hover .container-home-page {
+    background: rgba(255, 105, 180, 0.6);
+    transform: translateY(-5px);
+}
+
+.container-home-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    font-size: 70px;
+    background: rgba(255, 105, 180, 0.5);
+    transition: all 0.3s;
+    animation-delay: 0.1s;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    font-size: 40px;
+    background: rgba(255, 105, 180, 0.5);
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+	min-height: 200px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 14px;
+    background: rgba(255, 105, 180, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-container:hover {
+    background: rgba(255, 105, 180, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-content {
+    flex: 1;
+    text-align: left;
+}
+
+.social-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-description {
+    font-size: 30px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .social-container {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .social-title {
+        font-size: 30px;
+    }
+    
+    .social-description {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-container {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-title {
+        font-size: 25px;
+    }
+    
+    .social-description {
+        font-size: 20px;
+    }
+}
+
+.container3 {
+    max-width: 175px;
+    padding: 10px;
+    border-radius: 14px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.04);
+    font-size: 5px;
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.zayki {
+	max-width: 650px;
+	width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.back-button {
+	background: #ff1493;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.2);
+    font-size: 10px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: block;
+    color: #fff;
+    text-align: center;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: none;
+    background: #ff4da6;
+	transform: translateY(-5px);
+}
+
+.social-aboutme {
+	text-align: left;
+	font-size: 20px;
+	display: flex;
+    max-width: 750px;
+	min-height: 200px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    gap: 20px;
+}
